@@ -1,6 +1,6 @@
 # Xilinx Varium C1100 FPGA development through Vitis
 
-Of course the better course of action here is to join the Xilinx Developeer Program to have access to several training opportunities and content!
+Of course the better course of action here is to join the Xilinx Developer Program to have access to several training opportunities and content!
 
 <img src="https://i.ibb.co/HCNQmMh/developerprogram.png">
 
