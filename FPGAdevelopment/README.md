@@ -32,8 +32,10 @@ For example, for our application we would use the Vitis Vision Library found in 
 
 https://xilinx.github.io/Vitis_Libraries/index.html
 
-Then upload that bitstream to our Workstation already prepared with the Varium C1100 and run it.
+Then upload that bitstream to the Varium C1100 in our already set up workstation and run the example application that you wwant to accelerate.
 Of course, the acceleration of said application was immense in comparison with other boards or machine with just a processor.
+
+The next step we thought for this project, that regretably requires probably half a year to develop is actually to run IPFS or Arweave infrastructure through this Varium C1100 powered workstation. But, to do that while the workstation is a Flux Node and we can select it from a Flux service. That would be "next level" as you have a Blockchain based algorythm running through a cloud based FPGA-powered workstation having complete decentralization. As we know IPFS now is the backbone of NFTs and some of the Metaverse so having that would be in essence incredible and the true future for these applications.  
 
 
 
