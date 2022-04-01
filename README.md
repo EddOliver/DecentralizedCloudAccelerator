@@ -378,7 +378,8 @@ After all that we can see how that is the way to go forward, naturally we think 
 
 Hopefully you liked the project, it was great building with the Xillinx Varium C1100.
 
-References:
+# References:
+  
 https://www.sas.com/en_us/insights/analytics/computer-vision.html
 
 https://www.precisionag.com/digital-farming/how-computer-vision-is-fast-becoming-the-backbone-of-next-generation-agronomy/
