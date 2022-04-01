@@ -20,6 +20,27 @@ https://colab.research.google.com/github/altaga/Artic/blob/main/Minner%20Jetson/
 
 These examples are for just YoloV3 Machine Learning algorithms, but that can be accelerated via the Vitis Vision Library.
 
+What you need to do now is to set up Vitis and its environment.
+
+Follow this set of tutorials, you can stop at number four.
+
+<img src="https://i.ibb.co/G930vR1/vdev.png">
+
+Once done that you can choose which Vitis Library would be perfect for your application (depending on your SoC it might not run appropriately, but in essence every board can handle it as long as Vitis supports it.
+
+For example, for our application we would use the Vitis Vision Library found in this documentation:
+
+https://xilinx.github.io/Vitis_Libraries/index.html
+
+Then upload that bitstream to our Workstation already prepared with the Varium C1100 and run it.
+Of course, the acceleration of said application was immense in comparison with other boards or machine with just a processor.
+
+
+
+
+
+
+
 
 
 
