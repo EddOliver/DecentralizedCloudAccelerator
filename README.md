@@ -9,6 +9,8 @@ https://ethereum.org/en/upgrades/merge/
 
 One if not the main selling point of the Varium C1100 board is that it is an excepcional performer in accelerating Blockchain applications such as algorythm acceleration, transaction validation and all around what we call "mining". Both of our boards are mining at about 70+Mh/s each and around only 100W at the wall each which outperform many of the top GPUs used today to mine Ethereum.
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429520/image_toKS7hWQWh.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 And let's be frank, nowadays the only coin that is profitable to mine is Ethereum, other blockchains are not offering the same incentives as ETH and all that is just about to end.
 
 The Merge is coming and all Proof of work activities will cease altogether including Hardware mining. Making ETH a validator chain only.
