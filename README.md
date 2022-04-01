@@ -1,1 +1,1 @@
-# DecentralizedCloudAccelerator
+# Decentralized Cloud Accelerator
