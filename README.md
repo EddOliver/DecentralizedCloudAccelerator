@@ -395,4 +395,19 @@ https://github.com/xilinx/blockchainacceleration
 https://www.datacenterknowledge.com/edge-computing/why-microsoft-betting-fpgas-machine-learning-edge
 
 https://www.xilinx.com/products/design-tools/acceleration-zone/aws.html
+  
+https://www.arc.ics.keio.ac.jp/~matutani/papers/sakakibara_ispa2018.pdf
+  
+https://www.xilinx.com/video/software/vitis-unified-software-platform-accelerated-libraries.html
+  
+https://www.hackster.io/prithvi-mattur/big-data-analytics-935e3a
+  
+https://www.xilinx.com/products/design-tools/vitis/vitis-libraries/vitis-blockchain.html#gettingstarted
+  
+https://www.xilinx.com/products/design-tools/vitis/vitis-platform.html
+  
+https://github.com/Xilinx/Vitis-Tutorials
+  
+https://github.com/xilinx/blockchainacceleration
+  
 
