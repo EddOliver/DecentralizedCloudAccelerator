@@ -15,7 +15,11 @@ And let's be frank, nowadays the only coin that is profitable to mine is Ethereu
 
 The Merge is coming and all Proof of work activities will cease altogether including Hardware mining. Making ETH a validator chain only.
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429531/image_zE4Et8uCJZ.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 When is it happening? Well, they say:
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429533/image_xb5rlvs9Bk.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 This might be delayed as some ETH upgrades have been in the past, but I wouldn't bet on that that much.
 
@@ -26,6 +30,8 @@ And of the PoW ones there are only three other candidates for FPGA mining which 
 There are others like Flux that have anti-FPGA mechanisms and most of the top PoW ones depend on ASICS to do their mining and FPGAs have no business there. Other alternative would be to use it to accelerate Hedera, IPFS and some others, but after some research we found that this application is not really substantiated and it is remakably rare.
 
 Then, what now? Will my sparkling new Varium C1100 work great for a couple months and later become an expensive paperweight?
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429544/image_5yaGzwIasR.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 I don't think so, let us offer an alternative...a Web3 based alternative.
 
