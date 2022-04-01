@@ -363,7 +363,7 @@ Here we provide an example of how one of these Vitis Libraries can be used for a
 
 https://github.com/EddOliver/DecentralizedCloudAccelerator/tree/main/FPGAdevelopment
 
-Summary and Foreword
+# Summary and Foreword
 So, after all that let's go part by part.
 
 Prologue: we emphasized our reasons to switch from mining Ethereum to more Cloud based applications as all the other alternatives are not consequential for miners or cloud developers alike.
