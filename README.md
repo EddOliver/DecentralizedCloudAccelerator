@@ -178,13 +178,19 @@ Introduction and Problem
 
 Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Using digital images from cameras and videos and deep learning models, machines can accurately identify and classify objects and then react to what they “see.”
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429254/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f3830302f312a38676d6761416b4664492d394f4859356341393378512e706e67.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 In fact, as the most mature field in modern AI, it is permeating every sector of the economy. The opportunities that automating visual capabilities bring endless market opportunities across every sector.
 
 The global computer vision market size was valued at $9.45 billion in 2020, and is projected to reach $41.11 billion by 2030, registering a CAGR of 16.0% from 2020 to 2030.
+  
+<img src="https://hackster.imgix.net/uploads/attachments/1429255/68747470733a2f2f692e6962622e636f2f7a4e3843636e582f414d522e706e67.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 Most AI and cloud providers nowadays such as Google Cloud, Amazon AWS, Azure and many others offer AI, Machine learning and also to some degree Computer Vision services in their repertoire. One of the recent moves of this industry has been into the adoption of Edge Computing as the demand for computer power increases. Edge computing is computing that takes place at or near the physical location of either the user or the source of the data. By placing computing services closer to these locations, users benefit from faster, more reliable services while companies benefit from the flexibility of hybrid cloud computing. Edge computing is one way that a company can use and distribute a common pool of resources across a large number of locations.
 
 Edge computing is in use today across many industries, including telecommunications, manufacturing, transportation, utilities, and many others. The reasons people implement edge computing are as diverse as the organizations they support.
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429613/007798d1_wJsKP14MXa.jpg?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 The key areas that will be forever impacted by AI+Edge computing will be 5G, IoT and Self driving and vehicle communications.
 
@@ -192,9 +198,11 @@ The main issue with this field is that it is primordially in the hands of certai
 
 We think Near through Aurora and Flux can provide us with the tools to launch a highly decentralized web3 service for Computer Vision with incentives for those who would run our “nodes”.
 
-Solution
+### Solution
 
 So our plan is to create what we will call Decentralized AI infrastructure. By providing Decentralized Computer Vision services where you can mine through Edge Devices, employing Flux oracles and the Near-Aurora Blockchain. Thus, making it a true Web3 project.
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429704/image_lPhhlq8WTO.jpg?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 
 But first: What is Flux?
@@ -205,11 +213,15 @@ It is comprehensive suite of decentralized computing services and blockchain-as-
 
 Flux provides the critical, high availability infrastructure for the New Internet. Projects and development teams are not forced to rely on the Flux blockchain to utilize FluxOS, so they have access to necessary infrastructure while maintaining all the unique properties of their own chains. Flux makes up one important piece of a well-balanced distributed computing portfolio focused on the next generation of the Internet.
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429309/image_PhKSFHWszG.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 Whitepaper: https://fluxwhitepaper.app.runonflux.io/?_gl=1*15zg29o*_ga*MjAxNzAyNDY5MS4xNjQ2MTAwMTQ0*_ga_M3VPBDLWV7*MTY0ODc3NzM3MC40LjEuMTY0ODc3ODAzOS4zMQ..
 
 Webpage: https://runonflux.io
 
 The Varium C1100 will be used for this application primarily to run Flux Nodes as a very capable, high performing and hardware updatable server providing cloud infrastructure to the network like few servers do. But we also need our "offshoot" nodes that will perform the AI and Computer Vision. For that we had several options including the Nvidia Jetson Nano, Ultra96 board but we decided to take out a Xillinx ZCU104 board to stay on the FPGA thematic. Not to mention it is about 5 times more powerful for these applications.
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429275/image_iVpswlyGjw.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 Hi, if you are a judge and want to review the AI model running in GoogleColab here are the notebooks.
 
@@ -226,6 +238,8 @@ All the Smart Contracts codebase (Near-Aurora and Flux) is at: https://github.co
 How it's Built
 This is the main schematic of our solution:
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429276/general.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 So the development has been done in three parts:
 
 1. The Near-Aurora blockchain incentive infrastructure and service base:
@@ -234,11 +248,19 @@ The project will be named Artic so we will create a token called TIC to give mon
 
 Here is the landing page:
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429277/ui1.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 The AI service (Notice the four computations that come from four contracts each):
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429278/ui2.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 And a temporal Faucet for you to test the system:
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429279/token2.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 You can pay for AI services in this other screen through Metamask:
+
+<img src=""https://hackster.imgix.net/uploads/attachments/1429280/pay2.png?auto=compress%2Cformat&w=740&h=555&fit=max>
 
 You can see all the Aurora-based smart contracts that run on this layer here, including the ones that come from Flux oracles: https://github.com/altaga/Artic/tree/main/Contracts
 
@@ -250,29 +272,39 @@ This infrastructure runs then from the Edge device all the way to Flux oracles a
 
 Jetson Nano:
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429281/ai.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 ZCU104:
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429282/ai2.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 On our AI service page you can see one of our oracles feeding their contract in real time, you can check all of this directly in the Aurora Explorer.
 
 In this case this oracle obtains its data from the edge processing of images in a jetson nano and ZCU104 through the YoloV3 model, this is a practical example of how the oracle could be fed with an AI model.
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429283/ui2.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 3. Edge Device running Machine Learning CV services.
 
 We are using two Jetson Nanos and one ZCU104 to run these services and for this PoC they are running a YoloV3 image classification algorithm that has several use cases including automotive applications.
 
 This is a mini demo of this application:
+  
+https://www.youtube.com/watch?v=yygXL4Zh7i4
 
 
 ZCU104 Demo:
 
+https://www.youtube.com/watch?v=Y-GctH4aNCE
 
 You can go to this section to see several inference models and how it would be used:
 https://github.com/altaga/Artic#appendix-ii
 
 Let's see a hype demo of this solution:
 
+https://www.youtube.com/watch?v=_Ww-3GVH3r4
 
-Chapter 2. The Varium C1100 as a high performing and hardware updatable Server for Web 3..the future for the Varium C1100
+# Chapter 2. The Varium C1100 as a high performing and hardware updatable Server for Web 3..the future for the Varium C1100
 Now for the last part of this project and the best application we could find for the Varium C1100 board.
 
 What we will try to do now is to run the workstation as a Flux Node that will be upgradable via the FPGAs that it has in its interior. This makes it quite more powerful and also an incredible tool for anyone trying to not only use an FPGA via cloud but as a way to expand the capabilities of cloud servers.
@@ -283,7 +315,11 @@ Well, several companies have begun to attach FPGAs to their servers from a coupl
 
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-fpga-web-service
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429561/image_3Bfgzr8Ivo.png?auto=compress%2Cformat&w=740&h=555&fit=max"> 
+
 And another one.
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429563/image_ndkEYJVdKd.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 Well we can infer from the picture above that Xilinx is already on the move for this one and understands it.
 
@@ -307,6 +343,8 @@ Some tips and tricks:
 
 Here is my workstation running a Cumulus node which is quite overpowered for that application but well, I didn't have the collateral for a bigger one.
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429668/image_UBGaTBFiKq.png?auto=compress%2Cformat&w=740&h=555&fit=max"> 
+
 Of course, for this application apart from running a Flux Cloud Node on our workstation we want to accelerate these application through our FPGA.
 
 For that we need Vitis/Vivado installed on our workstation.
@@ -318,6 +356,8 @@ https://www.hackster.io/prithvi-mattur/big-data-analytics-935e3a
 Xilinx offers ample documentation on how to use Vitis, so I can be brief on that:
 
 https://www.xilinx.com/video/software/vitis-unified-software-platform-accelerated-libraries.html
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429671/image_7xriuXZyR0.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 Here we provide an example of how one of these Vitis Libraries can be used for a server AI acceleration application that can later be changed to any other application thanks to the power of FPGAs:
 
