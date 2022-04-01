@@ -4,7 +4,7 @@ Accelerating Blockchain Transfer System on Flux Using the Xilinx Varium C1100 FP
 
 <img src="https://i.ibb.co/RB0zZ3G/logo.png" width="500">
 
-Prologue: The Merge is coming
+# Prologue: The Merge is coming
 https://ethereum.org/en/upgrades/merge/
 
 One if not the main selling point of the Varium C1100 board is that it is an excepcional performer in accelerating Blockchain applications such as algorythm acceleration, transaction validation and all around what we call "mining". Both of our boards are mining at about 70+Mh/s each and around only 100W at the wall each which outperform many of the top GPUs used today to mine Ethereum.
@@ -35,7 +35,7 @@ Then, what now? Will my sparkling new Varium C1100 work great for a couple month
 
 I don't think so, let us offer an alternative...a Web3 based alternative.
 
-Chapter 0. How to mine on teamredminer...using the last few months till the merge.
+# Chapter 0. How to mine on teamredminer...using the last few months till the merge.
 Anticipating that many other submissions to this challenge will use the official Xilinx documentation to mine Ethereum we will showcase an alternative to that with two Varium C1100 boards as we each received one.
 You can find instructions for that here: https://github.com/xilinx/blockchainacceleration
 
@@ -55,6 +55,7 @@ You can install Ubuntu on a partition of your Hard Drive or another Hard Drive I
 
 You can follow this guide for that:
 
+https://www.youtube.com/watch?v=CWQMYN12QD0
 
 Now that you have Ubuntu installed the next steps are the MOST IMPORTANT.
 
@@ -64,9 +65,12 @@ Then go ahead to Terminal and update further just in case
 
 sudo apt-get update 
 sudo apt-get upgrade
+
 If you have an AMD GPU then go to this page and search the EXACT model of your GPU. I have to stress this or else you will not be able to mine! In my case it was the RX6700xt
 
 https://www.amd.com/en/support
+
+<img src="https://hackster.imgix.net/uploads/attachments/1429446/image_GiYFoq6yOp.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 Click submit and download the driver for Ubuntu 20.4 LTS
 
@@ -78,7 +82,11 @@ And now follow these instructions, what we are maily looking to install is OpenC
 
 https://amdgpu-install.readthedocs.io/en/latest/install-installing.html
 
+<omg src="https://hackster.imgix.net/uploads/attachments/1429482/image_tKAROboFpw.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 Then go to Installing the Workstation use case:
+  
+<img src="https://hackster.imgix.net/uploads/attachments/1429483/image_HuQeoymf5z.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 And type this command into your terminal:
 
@@ -109,6 +117,8 @@ And download the latest Linux release. Extract that package.
 That is most of the work done on the software side now let's talk Hardware.
 
 Fistly you need a workstation/server/mining rig with the minimal requirements for the Varium C1100:
+  
+<img src="https://hackster.imgix.net/uploads/attachments/1429496/image_QL6Ml3rNy4.png?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 I.E. the most stringent requirements are a machine with minimum 64GB of RAM if you are going to develop bitstreams, 1 PCIE lane, and that's pretty much it, most other systems will have the other requirements.
 
@@ -118,40 +128,52 @@ I say this with a lot of love, the Varium C1100 is extraordinarily well put toge
 
 In our case we are going to emulate a "GPU mining rig" so to battle the thermal situation we will need a couple of Radial fans.
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429504/image_R40CpUTjON.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 These will be attached to the back of the Varium C1100.
 
-In adition to that any Mining "rig" support such as the one we provide at the bottom is probably excelent for this application and we will need a couple Risers such as this one (link provided in "things")
+In adition to that any Mining "rig" support such as the one we provide at the bottom is probably excelent for this application and we will need a couple Risers such as this one (link provided in "things"):
 
-If you are only going to connect one board the you are set just go ahead and connect it to the Riser, if you need to connect several boards and you just have one PCIE slot on your workstation then gran one of these:
+<img src="https://hackster.imgix.net/uploads/attachments/1429506/image_kh7olPWv0V.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
+If you are only going to connect one board the you are set just go ahead and connect it to the Riser, if you need to connect several boards and you just have one PCIE slot on your workstation then get one of these:
 
 https://www.amazon.com/dp/B092R64W2V
 
 A PCIE splitter card that will allow you to connect several of them.
 
+<img src="https://hackster.imgix.net/uploads/attachments/1429508/image_J0KkipdFJ0.png?auto=compress%2Cformat&w=740&h=555&fit=max">
+
 Now assemble everything. Depending on your PSU and situation you might need more splitter power cables and so forth.
 
 Also if you don''t have a rig and have a 3D printer you can print the design I left you at the bottom of this tutorial:
 
+https://www.youtube.com/watch?v=ngCzJ4ey_DQ  
 
 Just one warning: avoid connecting anything through Sata, go always PCIE or Molex.
 
 This is my setup:
+  
+<img src="https://hackster.imgix.net/uploads/attachments/1429571/20220331_160826_hvk50v5nYK.jpg?auto=compress%2Cformat&w=740&h=555&fit=max">
 
 Video Recap:
-
+  
+https://www.youtube.com/watch?v=Azlqubo3aDc
 
 Now let's try to mine:
 
 Go to your terminal and navigate to the folder where you extracted Teamredminer, after that input a command such as this one where Address is your Ethereum address where you want to mine, I recommend a Metamask or Exodus. And choose the pool that's nearest to you, in my case it is an Ethermine US pool.
 
-Video
+Video:
+
+https://www.youtube.com/watch?v=6POWEaSibYg
 
 
 That is the first part and that might be a complete project by itself, but remember THE MERGE IS COMING, and we need to find another kind of application for the boards or they will become paperweights.
 
 For that, we think Web3 is the answer.
 
-Chapter 1. Web3 to the rescue: Decentralized cloud computing via Artic Protocol and Flux
+# Chapter 1. Web3 to the rescue: Decentralized cloud computing via Artic Protocol and Flux
 Introduction and Problem
 
 Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Using digital images from cameras and videos and deep learning models, machines can accurately identify and classify objects and then react to what they “see.”
