@@ -91,6 +91,8 @@ From this process we will obtain a file called "dpu_face_binary_classifier_0.elf
 
 This file has saved the model that we will use later and that has been already provided in the "Main Notebook" folder.
 
+## Final Deployment
+
 What would change is downloading everything to Varium C1100 
 
 Remember that I told you need to have OpenCL perfectly installed on your Workstation? If not, everything will collapse at this point requiring a full install.
