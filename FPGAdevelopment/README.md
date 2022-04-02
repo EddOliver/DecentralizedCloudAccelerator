@@ -136,7 +136,11 @@ From this process we will obtain a file called "dpu_face_binary_classifier_0.elf
 
 This file has saved the model that we will use later and that has been already provided in the "Main Notebook" folder.
 
-What would change is instead of dowloading everything to the ZCU104 now we deploy that into the Varium C1100 
+What would change is dowloading everything to Varium C1100 
+
+
+
+# Final remarks
 
 The next step we thought for this project, that regretably requires probably half a year to develop is actually to run IPFS or Arweave infrastructure through this Varium C1100 powered workstation. But, to do that while the workstation is a Flux Node and we can select it from a Flux service. That would be "next level" as you have a Blockchain based algorythm running through a cloud based FPGA-powered workstation having complete decentralization. As we know IPFS now is the backbone of NFTs and some of the Metaverse so having that would be in essence incredible and the true future for these applications.  
 
