@@ -32,7 +32,7 @@ For example, for our application we would use the Vitis Vision Library found in 
 
 https://xilinx.github.io/Vitis_Libraries/index.html
 
-Then upload that bitstream to the Varium C1100 in our already set up workstation and run the example application that you wwant to accelerate.
+Then upload that bitstream to the Varium C1100 in our already set up workstation and run the example application that you want to accelerate.
 Of course, the acceleration of said application was immense in comparison with other boards or machine with just a processor.
 
 We have done a "guide" for Vitis development in the past, we are quite familiarized as we have now developed on vitis for years. Here is the excert from that that was allocated in this past project: https://github.com/altaga/Facemask-Detector-ZCU104
