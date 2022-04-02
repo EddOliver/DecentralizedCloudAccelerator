@@ -40,6 +40,102 @@ We have done a "guide" for Vitis development in the past, we are quite familiari
 Of course it is heavily based on Xilinx's own documentation nevertheless here are the most important aspects:
 -----------------------------------------------------------------------------------------------------------------
 
+## **Train Environment Setup**
+
+To perform the neural network training correctly, it is necessary to use the environment that Xilinx offers us for AI adapted to models focused on DPU which runs on Ubuntu 18.04.3.
+
+http://old-releases.ubuntu.com/releases/18.04.3/
+
+NOTE: ONLY IN THIS UBUNTU VEERSION IS ENVIROMENT COMPATIBLE, ONCE YOU INSTALL THE VIRTUAL MACHINE, DO NOT UPDATE ANYTHING, SINCE YOU WILL NOT BE ABLE TO USE THE ENVIROMENT AND YOU WILL HAVE TO INSTALL EVERYTHING AGAIN.
+
+<img src="https://i.ibb.co/pnjvwMm/image.png" width="1000">
+
+In my case I use a machine with Windows 10, so to do the training I had to use a virtual machine in VMware.
+
+https://www.vmware.com/mx.html
+
+Within the options to install the environment there is one to use the GPU and another CPU, since I use the virtual machine I will use the CPU installation.
+
+https://github.com/Xilinx/Vitis-AI
+
+Open the linux terminal and type the following commands.
+
+In the Scripts folder I have already left several .sh files with which you can easily install all the necessary files, these files must be in the /home folder for them to work properly.
+
+1. Install Docker (1 - 2 minutes) if you already have Docker go to Script 2.
+
+        sudo bash install_docker.sh
+
+2. Install Vitis (10 - 20 minutes).
+
+        sudo bash install_vitis.sh
+
+NOTE: install only one of the following ENV according to your preference.
+
+3. Install CPU or GPU Support.
+
+   - Installing CPU (20 - 30 minutes).
+
+           sudo bash install_cpu.sh 
+
+   OR
+
+   - Installing the GPU environment (20 - 30 minutes).
+
+           sudo bash install_gpu.sh
+        
+4. Start base Env.
+
+        sudo bash run_env.sh
+
+5. Start Vitis-AI-TensorFlow
+
+        conda activate vitis-ai-tensorflow
+
+6. Run this command once (IMPORTANT).
+        
+        yes | pip install matplotlib keras==2.2.5
+
+<img src="https://i.ibb.co/yQ4qtXJ/image.png" width="1000">
+
+If you did everything right, you should see a console like this one.
+
+In the [Appendix A](#appendix-a) you can see the Scripts content.
+
+## **Training the model**
+
+To carry out the training, copy all the files inside the "Setup Notebook and Dataset" repository folder to the Vitis-AI folder for the code to run properly.
+
+Just as in the picture.
+
+<img src="https://i.ibb.co/zFyKSDM/image.png" width="1000">
+
+Now in the command console we will execute the following command to open Jupyter Notebooks.
+
+    jupyter notebook --allow-root
+
+<img src="https://i.ibb.co/9n01Vhn/image.png" width="1000">
+
+Open the browser and paste the link that appeared in the terminal and open the file.
+
+<img src="https://i.ibb.co/Zd4ZLsQ/image.png" width="1000">
+
+Once the code is open in the Kernel tab, it executes everything as shown in the image.
+
+<img src="https://i.ibb.co/5K1xhmF/image.png" width="1000">
+
+All the code is explained in detail. To understand it fully, please review it.
+
+https://github.com/altaga/Facemask-Detector-ZCU104/blob/main/Setup%20Notebook%20and%20Dataset/train_facemask_model.ipynb
+
+After the excecution, if everything worked well we should see the following result.
+
+<img src="https://i.ibb.co/RvhDfpD/image.png" width="1000">
+
+From this process we will obtain a file called "dpu_face_binary_classifier_0.elf".
+
+This file has saved the model that we will use later and that has been already provided in the "Main Notebook" folder.
+
 What would change is instead of dowloading everything to the ZCU104 now we deploy that into the Varium C1100 
 
 The next step we thought for this project, that regretably requires probably half a year to develop is actually to run IPFS or Arweave infrastructure through this Varium C1100 powered workstation. But, to do that while the workstation is a Flux Node and we can select it from a Flux service. That would be "next level" as you have a Blockchain based algorythm running through a cloud based FPGA-powered workstation having complete decentralization. As we know IPFS now is the backbone of NFTs and some of the Metaverse so having that would be in essence incredible and the true future for these applications.  
