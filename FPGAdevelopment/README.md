@@ -42,65 +42,20 @@ Of course it is heavily based on Xilinx's own documentation nevertheless here ar
 
 ## **Train Environment Setup**
 
-To perform the neural network training correctly, it is necessary to use the environment that Xilinx offers us for AI adapted to models focused on DPU which runs on Ubuntu 18.04.3.
+To perform the neural network training correctly, it is necessary to use the environment that Xilinx offers us for AI adapted to models which runs on Ubuntu.
 
-http://old-releases.ubuntu.com/releases/18.04.3/
+If you had some problem following the most up to date documentation might be in order: https://github.com/Xilinx/Vitis-Tutorials/blob/2021.2/Getting_Started/Vitis/Part2.md
 
-NOTE: ONLY IN THIS UBUNTU VEERSION IS ENVIROMENT COMPATIBLE, ONCE YOU INSTALL THE VIRTUAL MACHINE, DO NOT UPDATE ANYTHING, SINCE YOU WILL NOT BE ABLE TO USE THE ENVIROMENT AND YOU WILL HAVE TO INSTALL EVERYTHING AGAIN.
 
-<img src="https://i.ibb.co/pnjvwMm/image.png" width="1000">
+You have to get an image just like this one to se that you have everything set up correctly!
 
-In my case I use a machine with Windows 10, so to do the training I had to use a virtual machine in VMware.
+Additional tips:
 
-https://www.vmware.com/mx.html
+-Yes, the Varium C1100 is NOT an ARM device, treat it like an Alveo Data analytics card.
+-Do the Install on Linux, Ubuntu 20.4 LTS in my case.
+-The XRT environment is ALWAYS needed
+-Install in the order provided.
 
-Within the options to install the environment there is one to use the GPU and another CPU, since I use the virtual machine I will use the CPU installation.
-
-https://github.com/Xilinx/Vitis-AI
-
-Open the linux terminal and type the following commands.
-
-In the Scripts folder I have already left several .sh files with which you can easily install all the necessary files, these files must be in the /home folder for them to work properly.
-
-1. Install Docker (1 - 2 minutes) if you already have Docker go to Script 2.
-
-        sudo bash install_docker.sh
-
-2. Install Vitis (10 - 20 minutes).
-
-        sudo bash install_vitis.sh
-
-NOTE: install only one of the following ENV according to your preference.
-
-3. Install CPU or GPU Support.
-
-   - Installing CPU (20 - 30 minutes).
-
-           sudo bash install_cpu.sh 
-
-   OR
-
-   - Installing the GPU environment (20 - 30 minutes).
-
-           sudo bash install_gpu.sh
-        
-4. Start base Env.
-
-        sudo bash run_env.sh
-
-5. Start Vitis-AI-TensorFlow
-
-        conda activate vitis-ai-tensorflow
-
-6. Run this command once (IMPORTANT).
-        
-        yes | pip install matplotlib keras==2.2.5
-
-<img src="https://i.ibb.co/yQ4qtXJ/image.png" width="1000">
-
-If you did everything right, you should see a console like this one.
-
-In the [Appendix A](#appendix-a) you can see the Scripts content.
 
 ## **Training the model**
 
@@ -138,6 +93,22 @@ This file has saved the model that we will use later and that has been already p
 
 What would change is dowloading everything to Varium C1100 
 
+Remember that I told you you need to have OpenCL perfectly installed on your Workstation? If not everything will collapse at this point requiring a full install.
+
+Follow his guide for that from this point:
+
+https://docs.xilinx.com/r/en-US/ug1393-vitis-application-acceleration/Building-and-Running-the-Application
+
+And read this one to understand what is happenning:
+
+https://github.com/Xilinx/Vitis-Tutorials/blob/2021.2/Getting_Started/Vitis/Part4-data_center.md
+
+Some Best Practices:
+
+https://docs.xilinx.com/r/en-US/ug1393-vitis-application-acceleration/Best-Practices-for-Acceleration-with-Vitis
+
+And some examples that you might want to test (not all work on the Varium card)
+https://github.com/Xilinx/Vitis_Accel_Examples
 
 
 # Final remarks
