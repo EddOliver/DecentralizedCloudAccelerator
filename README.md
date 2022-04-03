@@ -162,7 +162,11 @@ https://www.youtube.com/watch?v=Azlqubo3aDc
 
 Now let's try to mine:
 
-Go to your terminal and navigate to the folder where you extracted Teamredminer, after that input a command such as this one where Address is your Ethereum address where you want to mine, I recommend a Metamask or Exodus. And choose the pool that's nearest to you, in my case it is an Ethermine US pool.
+Go to your terminal and navigate to the folder where you extracted Teamredminer, after that input a command such as this one: 
+
+sudo ./teamredminer -a ethash -o stratum+tcp://eu1.ethermine.org:4444 -u YOUR_ETH_ADDRESS.worker -p x
+
+Where Address is your Ethereum address where you want to mine, I recommend a Metamask or Exodus. And choose the pool that's nearest to you, in my case it is an Ethermine US pool.
 
 Video:
 
